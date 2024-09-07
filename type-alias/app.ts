@@ -15,9 +15,17 @@ type Person = {
 // Cannot redeclare block-scoped variable 'person'.ts(2451)
 // app.ts(15, 5): 'person' was also declared here.
 
-let person1: Person = {
-  name: "abhishek",
-  age: 21,
-};
+// let person1: Person = {
+//   name: "abhishek",
+//   age: 21,
+// };
 
-console.log(person1);
+// console.log(person1);
+
+// Union types
+type alphanumeric = string | number;
+let input: alphanumeric;
+input = 21;
+console.log(input);
+input = "abhishek";
+console.log(input);
