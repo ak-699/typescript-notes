@@ -23,12 +23,12 @@
 // console.log(person1);
 
 // Union types
-type alphanumeric = string | number;
-let input: alphanumeric;
-input = 21;
-console.log(input);
-input = "abhishek";
-console.log(input);
+// type alphanumeric = string | number;
+// let input: alphanumeric;
+// input = 21;
+// console.log(input);
+// input = "abhishek";
+// console.log(input);
 
 // Intersection types
 type Person = {
