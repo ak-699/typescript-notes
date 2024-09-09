@@ -20,7 +20,7 @@
 // };
 // greetUser(user);
 
-// Optional Properties
+/* --------------------------- Optional Properties -------------------------- */
 // To make a property optional in a object put a question mark
 // interface Dog {
 //   firstName: String;
@@ -34,26 +34,36 @@
 
 // getFullName({ firstName: "Tony", lastName: "Stark", middleName: "fucking" });
 
-// Read only properties
+/* -------------------------- Read only properties -------------------------- */
 // Property cannot be changed once assigned
 
-interface Dog {
-  readonly sno: number;
-  firstName: String;
-  lastName: String;
-}
+// interface Dog {
+//   readonly sno: number;
+//   firstName: String;
+//   lastName: String;
+// }
 // Can combine readonly and ?
 
-function getFullName(dog: Dog) {
-  console.log(dog);
-}
+// function getFullName(dog: Dog) {
+//   console.log(dog);
+// }
 
-let myDog: Dog = {
-  sno: 1,
-  firstName: "tony",
-  lastName: "stark",
-};
-console.log(myDog);
+// let myDog: Dog = {
+//   sno: 1,
+//   firstName: "tony",
+//   lastName: "stark",
+// };
+// console.log(myDog);
 // Cannot assign to 'sno' because it is a read-only property.
 // myDog.sno = 2;
 // console.log(myDog)
+
+/* ----------------------------- Function Types ----------------------------- */
+interface Dog {
+  (a: String, b: number): string;
+}
+
+let myDog: Dog;
+myDog = (name: String, age: number) => {
+  return name + `${age}`;
+};
