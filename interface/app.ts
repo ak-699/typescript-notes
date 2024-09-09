@@ -38,16 +38,18 @@
 // Property cannot be changed once assigned
 
 interface Dog {
-  readonly sno?: number;
+  readonly sno: number;
   firstName: String;
   lastName: String;
 }
+// Can combine readonly and ?
 
 function getFullName(dog: Dog) {
   console.log(dog);
 }
 
 let myDog: Dog = {
+  sno: 1,
   firstName: "tony",
   lastName: "stark",
 };
