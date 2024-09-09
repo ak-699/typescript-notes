@@ -73,3 +73,19 @@
 // Expected 2 arguments, but got 1.
 // console.log(anotherDog("Toney"));
 // console.log(anotherDog("Tony", 21));
+
+/* ------------------------------- Class Types ------------------------------ */
+
+// interface Json {
+//   toJson(): String;
+// }
+
+// class Dog implements Json {
+//   constructor(private name: String, private age: number) {}
+//   toJson(): String {
+//     return JSON.stringify(this);
+//   }
+// }
+
+// let myDog = new Dog("Tony", 21);
+// console.log(myDog.toJson());
