@@ -59,11 +59,17 @@
 // console.log(myDog)
 
 /* ----------------------------- Function Types ----------------------------- */
-interface Dog {
-  (a: String, b: number): string;
-}
+// interface Dog {
+//   (a: String, b: number): string;
+// }
 
-let myDog: Dog;
-myDog = (name: String, age: number) => {
-  return name + `${age}`;
-};
+// let myDog: Dog;
+// myDog = (name: String, age: number) => {
+//   return name + `${age}`;
+// };
+// let anotherDog:Dog = (name: String) => {
+//   return "Bow...";
+// }
+// Expected 2 arguments, but got 1.
+// console.log(anotherDog("Toney"));
+// console.log(anotherDog("Tony", 21));
