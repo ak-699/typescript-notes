@@ -22,14 +22,36 @@
 
 // Optional Properties
 // To make a property optional in a object put a question mark
+// interface Dog {
+//   firstName: String;
+//   lastName: String;
+//   middleName?: string;
+// }
+
+// function getFullName(dog: Dog) {
+//   console.log(dog);
+// }
+
+// getFullName({ firstName: "Tony", lastName: "Stark", middleName: "fucking" });
+
+// Read only properties
+// Property cannot be changed once assigned
+
 interface Dog {
+  readonly sno?: number;
   firstName: String;
   lastName: String;
-  middleName?: string;
 }
 
 function getFullName(dog: Dog) {
   console.log(dog);
 }
 
-getFullName({ firstName: "Tony", lastName: "Stark", middleName: "fucking" });
+let myDog: Dog = {
+  firstName: "tony",
+  lastName: "stark",
+};
+console.log(myDog);
+// Cannot assign to 'sno' because it is a read-only property.
+// myDog.sno = 2;
+// console.log(myDog)
